@@ -1,0 +1,74 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Nunito', sans-serif;
+}
+
+.game-header{
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 30px;
+    height: 60px;
+}
+
+#start, #level{
+    border-radius: 30px;
+    padding: 4px 20px;
+    margin: 0 4px;
+    border: none;
+    background-color: black;
+    color: white;
+    cursor: pointer;
+}
+
+
+
+main{
+    background-color: rgb(127, 255, 212);
+    height: calc(100vh - 60px);
+    color: white;
+}
+
+#grid{
+    width: 700px;
+    height: 700px;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: flex-start;
+    padding-top: 20px;
+}
+
+.square{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    border: 3px solid white;
+}
+
+.selected1{
+    background-color: white;
+    color: rgb(127, 255, 212);;
+}
+
+.easyLvl{
+    width: calc(100%/10);
+    height: calc(100%/10);
+}
+
+.mediumLvl{
+    width: calc(100%/9);
+    height: calc(100%/9);
+}
+
+.diffLvl{
+    width: calc(100%/7);
+    height: calc(100%/7);
+}
